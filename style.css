@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Sofia Pro';
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#logo {
+    position: relative;
+    display: inline-block;
+    font-size: 84px;
+    font-weight: bold;
+    color: #0ff;
+    isolation: isolate;
+}
+
+#logo::before {
+    content: attr(data-text);
+    position: absolute;
+    transform: translate(4px, 4px);
+    filter: invert(1) saturate(3);
+    mix-blend-mode: screen;
+}
+
+#logo::after {
+    content: attr(data-text);
+}
+
+table {
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+td:first-child {
+    text-align: right;
+    padding-right: 25px;
+}
+
+input {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    font-family: 'Sofia Pro';
+    border: 0;
+    border-bottom: 2px dashed #111;
+    font-size: 1em;
+    width: 200px;
+}
+
+input:focus {
+    border-bottom: 2px solid #222;
+}
+
+*:focus {
+    outline: none;
+}
+
+button {
+    font-family: 'Sofia Pro';
+    background-color: #111;
+    color: #fff;
+    border: 0;
+    font-size: 1.7em;
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 5px 10px;
+}
+
+#result {
+    display: none;
+}
+
+#txt {
+    font-size: 2em;
+}
+
+#score {
+    font-size: 5em;
+}

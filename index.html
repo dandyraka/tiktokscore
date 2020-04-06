@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TikTok Score</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <link rel="stylesheet" href="//db.onlinewebfonts.com/c/05428692254b58ccb090358a3dfecfff?family=Sofia+Pro">
+        <link rel="stylesheet" href="//bernzrdo.github.io/dashboard/confetti.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="confetti"></div>
+        <div id="content">
+            <span id="logo" data-text="TikTok Score"></span>
+            <table>
+                <tr>
+                    <td>Views:</td>
+                    <td><input id="views" autofocus></td>
+                </tr>
+                <tr>
+                    <td>Likes:</td>
+                    <td><input id="likes"></td>
+                </tr>
+            </table>
+            <button id="button">Calculate TikTok score</button>
+            <div id="result">
+                <span id="txt">Your TikTok score is</span><br>
+                <span id="score">0</span>
+            </div>
+        </div>
+    </body>
+</html>
